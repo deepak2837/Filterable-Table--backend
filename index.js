@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 mongoose.connect("mongodb+srv://deepak:deepak@cluster0.xdnvhh0.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to database!');
-    app.listen(port, () => console.log(`Server listening on port ${port}`));
+   
     loadData(); // Load data into database
   })
   .catch((err) => console.log(`Error connecting to database: ${err.message}`));
