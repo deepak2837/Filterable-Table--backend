@@ -19,7 +19,7 @@ app.use((req, res, next) => {
   );
   next();
 });
-mongoose.connect('mongodb://localhost/myapp', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://deepak:<password>@cluster0.xdnvhh0.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to database!');
     app.listen(port, () => console.log(`Server listening on port ${port}`));
