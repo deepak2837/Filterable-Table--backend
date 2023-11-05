@@ -5,7 +5,7 @@ const User = require('./models/userModel');
 const userRoutes = require('./routes/userRoutes');
 const mongoose = require('mongoose');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 10000;
 
 
 app.use(express.json());
