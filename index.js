@@ -46,3 +46,7 @@ const loadData = async () => {
 
 app.use('/api/users', userRoutes);
 
+// Start the server
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
